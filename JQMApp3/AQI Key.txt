@@ -1,0 +1,4 @@
+https://api.nal.usda.gov/fdc/v1/search?api_key=uL46DIWnAADj3A3VjygwaFqfHyyCsyNpkK7g5dIv
+&generalSearchInput=Ice%20Cream%20new%20messages%201:19%20https://fdc.nal.usda.gov/api-guide.html#bkmk-6
+
+https://api.nal.usda.gov/fdc/v1/foods/search?api_key=uL46DIWnAADj3A3VjygwaFqfHyyCsyNpkK7g5dIv&query=Ice%20Cream
