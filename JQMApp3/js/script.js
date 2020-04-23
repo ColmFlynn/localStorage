@@ -1,10 +1,8 @@
 
-		
-			let  data = {};
+let  data = {};
 			$( document ).ready(function() {
 					
-					$.getJSON("js/data2.js", function(result){
-					//$.getJSON("http://localhost/cscb-json/odbc-data/", function(result){
+					$.getJSON("https://api.nal.usda.gov/fdc/v1/foods/search?api_key=uL46DIWnAADj3A3VjygwaFqfHyyCsyNpkK7g5dIv&query=Ice%20Cream", function(result){
 						data = result;
 						
 						console.log("trigger 1 >> "+data);
@@ -22,7 +20,6 @@
 					});
 			});
 			function writeContent(num) {
-			
 			/*
 			{
 		"fdcId": 781531,
@@ -39,12 +36,7 @@
 			"value": 4.29000000
 		}
 			*/
-			/*	console.log(data);
-			console.log(data.catalog);
-			console.log(data.catalog[0]);
-			console.log(data.catalog[num]);
-			console.log(data.catalog[num].position);
-			*/
+		
 				$("#fdcID").html(data.foods[num].fdcID);
 				$("#description").html(data.foods[num].description);
 				$("#foodCode").html(data.foods[num].foodCode);
@@ -53,4 +45,3 @@
 				$("#dataType").html(data.foods[num].dataType);
 			
 			};
-			
